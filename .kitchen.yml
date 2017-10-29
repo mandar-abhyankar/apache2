@@ -18,6 +18,14 @@ verifier:
 
 platforms:
   - name: ubuntu-16.04
+    driver:
+      image: ubuntu:16.04
+      provision_command:
+        - apt-get update
+        - apt-get install curl -y
+        - apt-get install net-tools -y
+      forward:
+        - 80:80
 
 suites:
   - name: default

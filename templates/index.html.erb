@@ -1,0 +1,14 @@
+<html>
+  <head>
+    <title>
+      Apache2 Server
+    </title>
+  </head>
+  <body>
+    <h2>Hello! <%=node['apache2']['username']%></h2>
+    <p>IP Address: <%=node['ipaddress']%></p>
+    <p>Virtualization System: <%=node['virtualization']['system']%></p>
+    <p>Platform: <%=node['platform']%> </p>
+    <p>Have a <%=node['apache2']['mood_indc']%> day!</p>
+  </body>
+</html>

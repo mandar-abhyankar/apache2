@@ -1,6 +1,6 @@
 name 'apache2'
-maintainer 'The Authors'
-maintainer_email 'you@example.com'
+maintainer 'Mandar Abhyankar'
+maintainer_email 'mandar.abhyankar@email.com'
 license 'All Rights Reserved'
 description 'Installs/Configures apache2'
 long_description 'Installs/Configures apache2'

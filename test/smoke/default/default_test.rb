@@ -5,14 +5,12 @@
 # The Inspec reference, with examples and extensive documentation, can be
 # found at http://inspec.io/docs/reference/resources/
 
-unless os.windows?
-  # This is an example test, replace with your own test.
-  describe user('root'), :skip do
-    it { should exist }
-  end
+# Test if apache2 package is installed
+describe package('apache2') do
+  it { should be_installed }
 end
 
-# This is an example test, replace it with your own test.
-describe port(80), :skip do
-  it { should_not be_listening }
+# Test if the curl on localhost displays content as given in the template file
+describe command('curl localhost') do
+  its('stdout') { should match('Hello! Mandar') }
 end
